@@ -36,12 +36,12 @@
 
                     <div class="grid grid-rows-1 grid-flow-col gap-2 mt-4">
                         <div>
-                            <button class="bg-gray-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                            <button id="memory-GB-8" class="bg-gray-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
                                 8GB unified memory
                             </button>
                         </div>
                         <div>
-                            <button class="bg-gray-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                            <button id="memory-GB-16" class="bg-gray-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
                                 16GB unified memory
                             </button>
                         </div>
@@ -51,17 +51,17 @@
 
                     <div class="grid grid-rows-1 grid-flow-col gap-2 mt-4">
                         <div>
-                            <button class="bg-gray-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                            <button id="storage-GB-256" class="bg-gray-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
                                 256GB SSD storage
                             </button>
                         </div>
                         <div>
-                            <button class="bg-gray-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                            <button id="storage-GB-512" class="bg-gray-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
                                 512GB SSD storage
                             </button>
                         </div>
                         <div>
-                            <button class="bg-gray-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                            <button id="storage-TB-1" class="bg-gray-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
                                 1TB SSD storage
                             </button>
                         </div>
@@ -71,12 +71,12 @@
 
                     <div class="grid grid-rows-1 grid-flow-col gap-2 mt-4">
                         <div>
-                            <button class="bg-gray-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                            <button id="delivery-AUG-25" class="bg-gray-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
                                 Friday, Aug 25 FREE Prime Delivery
                             </button>
                         </div>
                         <div>
-                            <button class="bg-gray-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                            <button id="delivery-AUG-21" class="bg-gray-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
                                 Friday, Aug 21 Delivery Charge $20
                             </button>
                         </div>
@@ -85,28 +85,28 @@
                     <!-- calculation part starts -->
                     <div class="mt-12 flex">
                         <h3 class="font-semibold text-1xl">Best Price</h3>
-                        <h4 id="deposited-amount" class="font-semibold text-2xl ml-12">$1299</h4>
+                        <h4 id="best-price" class="font-semibold text-2xl ml-12">$1299</h4>
                     </div>
 
                     <div class="mt-2 flex">
                         <h3 class="font-semibold text-1xl">Extra Memory Cost</h3>
-                        <h4 id="deposited-amount" class="font-semibold text-2xl ml-12">$0</h4>
+                        <h4 id="memory-cost" class="font-semibold text-2xl ml-12">$0</h4>
                     </div>
 
                     <div class="mt-2 flex">
                         <h3 class="font-semibold text-1xl">Extra Storage Cost</h3>
-                        <h4 id="deposited-amount" class="font-semibold text-2xl ml-12">$0</h4>
+                        <h4 id="storage-cost" class="font-semibold text-2xl ml-12">$0</h4>
                     </div>
 
                     <div class="mt-2 flex">
                         <h3 class="font-semibold text-1xl">Delivery Charge</h3>
-                        <h4 id="deposited-amount" class="font-semibold text-2xl ml-12">$0</h4>
+                        <h4 id="delivery-cost" class="font-semibold text-2xl ml-12">$0</h4>
                     </div>
         
                     <hr style="border: 1px solid gray; width: 30%;">
                     <div class="mt-2 flex">
                         <h3 class="font-semibold text-1xl">Total Price</h3>
-                        <h4 id="deposited-amount" class="font-semibold text-2xl ml-12">$1299</h4>
+                        <h4 id="sub-total" class="font-semibold text-2xl ml-12">$1299</h4>
                     </div>
                     
                     <!-- calculation part ends -->
@@ -114,15 +114,15 @@
                     <!-- promo starts -->
                     <p class="mt-8">Apply promo code</p>
                     <div>
-                        <input id="user-email" class="border-2 border-gray-400 rounded my-4 p-2 m-2" type="text" placeholder="Enter promo code"/>
-                        <button id="login-submit" class="bg-red-500 m-2 px-4 py-2 rounded text-white">Apply</button>
+                        <input id="promo-code" class="border-2 border-gray-400 rounded my-4 p-2 m-2" type="text" placeholder="Enter promo code"/>
+                        <button id="promo-apply" class="bg-red-500 m-2 px-4 py-2 rounded text-white">Apply</button>
                     </div>
                     <!-- promo end -->
 
                     <!-- total starts -->
                     <div class="flex mt-12">
                         <h3 class="text-5xl">Total : </h3>
-                        <h4 class="text-5xl font-semibold"> $1299</h4>
+                        <h4 id="total" class="text-5xl font-semibold"> $1299</h4>
                     </div>
                     <!-- total ends -->
                 </div>
