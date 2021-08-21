@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MacBook Pro - DOM</title>
+
+    <!-- tailwind -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    
+    <header>
+        <h1 class="text-5xl text-center">MACBOOK PRO - APPLE INC.</h1>
+    </header>
+
+    <main>
+        <section class="container mx-auto">
+            <div class="h-64 grid grid-rows-1 grid-flow-col gap-4">
+
+                <!-- image part starts -->
+
+                <div class="mt-10 ml-8">
+                    <img src="images/mac.png" alt="" style="width: 500px; height: 450px;">
+                </div>
+
+                <!-- image part ends -->
+
+                <!-- info part starts -->
+
+                <div class="mt-12 ml-8">
+                    <h3 class="text-4xl w-3/4">Customize Your Blue 24-inch iMac with Apple M1 Chip</h3>
+                    <p class="w-3/4 mt-8">The Apple M1 is an ARM-based system on a chip. It was designed by Apple Inc. as a central processing unit and graphics processing unit for its Macintosh computers and iPad Pro tablets. It was inspired by their Apple A14 Bionic chip. </p>
+                    
+                    <p class="font-semibold mt-12">Memory</p>
+
+                    <div class="grid grid-rows-1 grid-flow-col gap-2 mt-4">
+                        <div>
+                            <button class="bg-gray-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                                8GB unified memory
+                            </button>
+                        </div>
+                        <div>
+                            <button class="bg-gray-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                                16GB unified memory
+                            </button>
+                        </div>
+                    </div>
+
+                    <p class="font-semibold mt-12">Storage</p>
+
+                    <div class="grid grid-rows-1 grid-flow-col gap-2 mt-4">
+                        <div>
+                            <button class="bg-gray-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                                256GB SSD storage
+                            </button>
+                        </div>
+                        <div>
+                            <button class="bg-gray-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                                512GB SSD storage
+                            </button>
+                        </div>
+                        <div>
+                            <button class="bg-gray-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                                1TB SSD storage
+                            </button>
+                        </div>
+                    </div>
+
+                    <p class="font-semibold mt-12">Choose your delivery option</p>
+
+                    <div class="grid grid-rows-1 grid-flow-col gap-2 mt-4">
+                        <div>
+                            <button class="bg-gray-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                                Friday, Aug 25 FREE Prime Delivery
+                            </button>
+                        </div>
+                        <div>
+                            <button class="bg-gray-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                                Friday, Aug 21 Delivery Charge $20
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- calculation part starts -->
+                    <div class="mt-12 flex">
+                        <h3 class="font-semibold text-1xl">Best Price</h3>
+                        <h4 id="deposited-amount" class="font-semibold text-2xl ml-12">$1299</h4>
+                    </div>
+
+                    <div class="mt-2 flex">
+                        <h3 class="font-semibold text-1xl">Extra Memory Cost</h3>
+                        <h4 id="deposited-amount" class="font-semibold text-2xl ml-12">$0</h4>
+                    </div>
+
+                    <div class="mt-2 flex">
+                        <h3 class="font-semibold text-1xl">Extra Storage Cost</h3>
+                        <h4 id="deposited-amount" class="font-semibold text-2xl ml-12">$0</h4>
+                    </div>
+
+                    <div class="mt-2 flex">
+                        <h3 class="font-semibold text-1xl">Delivery Charge</h3>
+                        <h4 id="deposited-amount" class="font-semibold text-2xl ml-12">$0</h4>
+                    </div>
+        
+                    <hr style="border: 1px solid gray; width: 30%;">
+                    <div class="mt-2 flex">
+                        <h3 class="font-semibold text-1xl">Total Price</h3>
+                        <h4 id="deposited-amount" class="font-semibold text-2xl ml-12">$1299</h4>
+                    </div>
+                    
+                    <!-- calculation part ends -->
+
+                    <!-- promo starts -->
+                    <p class="mt-8">Apply promo code</p>
+                    <div>
+                        <input id="user-email" class="border-2 border-gray-400 rounded my-4 p-2 m-2" type="text" placeholder="Enter promo code"/>
+                        <button id="login-submit" class="bg-red-500 m-2 px-4 py-2 rounded text-white">Apply</button>
+                    </div>
+                    <!-- promo end -->
+
+                    <!-- total starts -->
+                    <div class="flex mt-12">
+                        <h3 class="text-5xl">Total : </h3>
+                        <h4 class="text-5xl font-semibold"> $1299</h4>
+                    </div>
+                    <!-- total ends -->
+                </div>
+
+                <!-- info part ends -->
+
+            </div>
+        </section>
+    </main>
+
+    <script src="js/MacBook.js"></script>
+</body>
+</html>
